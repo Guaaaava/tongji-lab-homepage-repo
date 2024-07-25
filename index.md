@@ -1,22 +1,22 @@
 ---
 ---
 
-# GuaaaavaDESCRIPTION=An engaging 1-3 sentence description of your lab.'s Website
+# 这是同济大学“人工智能+大气海洋”实验室的首页
 
 
 
 {% include section.html %}
 
-## Highlights
+## 实验室介绍
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+这里是同济大学“人工智能+大气海洋”实验室的研究内容介绍。
 
 {%
   include button.html
   link="research"
-  text="See our publications"
+  text="查看实验室研究内容和成果"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -28,18 +28,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   include feature.html
   image="images/photo.jpg"
   link="research"
-  title="Our Research"
+  title="研究内容"
   text=text
 %}
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+这里是同济大学“人工智能+大气海洋”实验室的研究项目介绍。
 
 {%
   include button.html
   link="projects"
-  text="Browse our projects"
+  text="查看实验室项目"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -51,7 +51,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   include feature.html
   image="images/photo.jpg"
   link="projects"
-  title="Our Projects"
+  title="研究项目"
   flip=true
   style="bare"
   text=text
@@ -59,12 +59,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+这里是同济大学“人工智能+大气海洋”实验室的研究团队介绍。
 
 {%
   include button.html
   link="team"
-  text="Meet our team"
+  text="查看研究团队"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -76,6 +76,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   include feature.html
   image="images/photo.jpg"
   link="team"
-  title="Our Team"
+  title="研究团队"
   text=text
 %}
