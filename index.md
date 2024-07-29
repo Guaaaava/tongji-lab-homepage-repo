@@ -26,7 +26,7 @@
 
 {%
   include feature.html
-  image="https://gmd.copernicus.org/articles/15/4105/2022/gmd-15-4105-2022-avatar-web.png"
+  image="imgaes/icon.png"
   link="research"
   title="相关成果"
   text=text
