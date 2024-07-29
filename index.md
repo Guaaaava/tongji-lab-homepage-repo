@@ -26,7 +26,7 @@
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="https://gmd.copernicus.org/articles/15/4105/2022/gmd-15-4105-2022-avatar-web.png"
   link="research"
   title="相关成果"
   text=text
@@ -49,7 +49,7 @@
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="https://tianxing.tongji.edu.cn/assets/home_image-196317f7.png"
   link="team"
   title="研究团队"
   flip=true
@@ -74,7 +74,7 @@
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="https://www.cma.gov.cn/2011xwzx/2011xqxxw/2011xqxyw/202305/W020230518811321325859.jpg"
   link="blog"
   title="新闻"
   text=text
