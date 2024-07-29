@@ -26,7 +26,7 @@
 
 {%
   include feature.html
-  image="imgaes/icon.png"
+  image="images/ResearchPicture.png"
   link="research"
   title="相关成果"
   text=text
@@ -49,7 +49,7 @@
 
 {%
   include feature.html
-  image="https://tianxing.tongji.edu.cn/assets/home_image-196317f7.png"
+  image="images/TeamPicture.png"
   link="team"
   title="研究团队"
   flip=true
@@ -74,7 +74,7 @@
 
 {%
   include feature.html
-  image="https://www.cma.gov.cn/2011xwzx/2011xqxxw/2011xqxyw/202305/W020230518811321325859.jpg"
+  image="images/NewsPicture.png"
   link="blog"
   title="新闻"
   text=text
