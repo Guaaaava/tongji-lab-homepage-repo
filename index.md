@@ -19,7 +19,7 @@
   text="查看实验室已有成果"
   icon="fa-solid fa-arrow-right"
   flip=true
-  style="bare"
+  style="button"
 %}
 
 {% endcapture %}
