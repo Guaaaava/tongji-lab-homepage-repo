@@ -16,10 +16,6 @@
     | default: nil
   %}
   {% assign size = section | regex_scan: "size: (.*);" | default: "page" %}
-  {%- assign full = false -%}
-    {%- if section contains "<!-- section full -->" -%}
-      {%- assign full = true -%}
-    {%- endif -%}
 
   <section
     class="background"
@@ -31,12 +27,6 @@
       style="--image: url('{{ background | relative_url }}')"
     {% endif %}
   >
-    {%- if full == false -%}
-    <div class="section">
-    {%- endif -%}
-      {{ section }}
-    {%- if full == false -%}
-      </div>
-    {%- endif -%}
+    {{ section }}
   </section>
 {% endfor %}
