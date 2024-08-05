@@ -10,6 +10,12 @@
 {% assign sections = content | split: "<!-- section break -->" | array_filter %}
 
 {% for section in sections %}
+
+  {% assign full = false %}
+  {% if section contains "<!-- section full -->" %}
+    {% assign full = true %}
+  {% endif %}
+
   {% assign dark = section | regex_scan: "dark: (.*);" | default: "" %}
   {% assign background = section
     | regex_scan: "background: (.*);"
@@ -27,6 +33,12 @@
       style="--image: url('{{ background | relative_url }}')"
     {% endif %}
   >
-    {{ section }}
+    {%- if full == false -%}
+    <div class="section">
+    {%- endif -%}
+      {{ section }}
+    {%- if full == false -%}
+    </div>
+    {%- endif -%}
   </section>
 {% endfor %}
