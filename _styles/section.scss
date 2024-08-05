@@ -7,6 +7,14 @@ $padding: 40px;
 section {
   padding: $padding max($padding, calc((100% - $page) / 2));
   transition: background var(--transition), color var(--transition);
+  
+  .section {
+    box-sizing: content-box;
+    max-width: $page;
+    margin: 0 auto;
+    padding: 60px 40px;
+    text-align: center;
+  }
 }
 
 section[data-size="wide"] {
