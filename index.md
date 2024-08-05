@@ -32,6 +32,8 @@
   tooltip6="Biology education research"
 %}
 
+{:.center}
+
 {% include section.html full=true %}
 
 {% include banner.html image="images/banner.jpg" %}
