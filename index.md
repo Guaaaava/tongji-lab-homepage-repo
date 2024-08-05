@@ -32,7 +32,7 @@
   tooltip6="Biology education research"
 %}
 
-{% include section.html full %}
+{% include section.html size="full" %}
 
 {% include banner.html image="images/banner.jpg" %}
 
