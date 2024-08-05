@@ -9,7 +9,6 @@ section[data-size=wide] {
 
 section[data-size=full] {
   padding: 0;
-  width: 100%;
 }
 
 section[data-size=full] > * {
@@ -19,6 +18,9 @@ section[data-size=full] > * {
 
 section[data-size=full] img {
   border-radius: 0;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 main > section:last-of-type {
