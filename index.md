@@ -1,7 +1,7 @@
 ---
 ---
 
-# 同济大学“人工智能+大气海洋”实验室，又名“同济大学AIAO-Lab”，是目前国内 AI+气象交叉领域领先实验室之一。
+## 同济大学“人工智能+大气海洋”实验室，又名“同济大学AIAO-Lab”，是目前国内 AI+气象交叉领域领先实验室之一。
 
 {%
   include gallery.html
@@ -27,14 +27,12 @@
   link5="https://quantmarineecolab.github.io/publications/"
   tooltip5="Spatial ecology"
   
-    image6="images/research_topics/topic-bioed.jpeg"
+  image6="images/research_topics/topic-bioed.jpeg"
   link6="https://quantmarineecolab.github.io/research/bioed"
   tooltip6="Biology education research"
-
-
 %}
 
-{% include section.html%}
+{% include section.html full=true %}
 
 {% include banner.html image="images/banner.jpg" %}
 

@@ -1,14 +1,15 @@
-<!--
-  modify main content of page:
+{%- comment -%}
+  Modify main content of page:
   - add section breaks
   - attach section properties
   - filter out blank sections
--->
+{%- endcomment -%}
 
 {% assign content = include.content %}
 
-{% assign sections = content | split: "<!-- section break -->" | array_filter %}
+{%- assign sections = content | split: "<!-- section break -->" -%}
 
+<!--
 {% for section in sections %}
   {% assign dark = section | regex_scan: "dark: (.*);" | default: "" %}
   {% assign background = section
@@ -30,3 +31,42 @@
     {{ section }}
   </section>
 {% endfor %}
+-->
+
+{%- for section in sections -%}
+
+  {%- assign section = section | strip -%}
+  {%- unless section == "" -%}
+
+    {%- assign full = false -%}
+    {%- if section contains "<!-- section full -->" -%}
+      {%- assign full = true -%}
+    {%- endif -%}
+
+    {%- assign dark = false -%}
+    {%- if section contains "<!-- section dark -->" -%}
+      {%- assign dark = true -%}
+    {%- endif -%}
+
+    {%- assign background = false -%}
+    {%- if section contains "<!-- section background" and section contains "-->" -%}
+      {%- assign background = section | split: "<!-- section background" | last | split: "-->" | first | strip_newlines | strip -%}
+    {%- endif -%}
+
+    <section
+      class="background"
+      {% if dark %}data-dark="true"{% endif %}
+      {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %}
+    >
+      {%- if full == false -%}
+      <div class="section">
+      {%- endif -%}
+        {{ section }}
+      {%- if full == false -%}
+      </div>
+      {%- endif -%}
+    </section>
+
+  {%- endunless -%}
+
+{%- endfor -%}
