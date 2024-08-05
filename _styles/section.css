@@ -9,6 +9,7 @@ section[data-size=wide] {
 
 section[data-size=full] {
   padding: 0;
+  width: 100%;
 }
 
 section[data-size=full] > * {
