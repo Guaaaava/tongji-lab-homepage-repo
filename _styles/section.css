@@ -1,10 +1,10 @@
 section {
-  padding: 40px max(40px, (115% - 1000px) / 2);
+  padding: 40px max(40px, (100% - 850px) / 2);
   transition: background var(--transition), color var(--transition);
 }
 section .section {
   box-sizing: content-box;
-  max-width: 1000px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 60px 40px;
   text-align: center;
