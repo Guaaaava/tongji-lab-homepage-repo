@@ -40,7 +40,7 @@
 
 {% include section.html %}
 
-# 总  览
+# 总    览
 
 {% capture text %}
 
