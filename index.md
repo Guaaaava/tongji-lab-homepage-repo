@@ -58,6 +58,8 @@
 
 {% include section.html %}
 
+{:.center}
+
 # 总 览
 
 {% capture text %}
