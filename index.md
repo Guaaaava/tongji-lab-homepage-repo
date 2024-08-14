@@ -6,20 +6,19 @@
 本实验室又名“同济大学AIAO-Lab”，是目前国内 AI+气象交叉领域领先实验室之一。实验室研究方向包括采用 AI 技术改善数值模式的预报技巧并提高预报效率和人工智能气象应用的物理一致性和可解释性研究等，覆盖 AI+气象的各个方面，当前主持国家自然科学基金重点联合基金项目一项、国家自然科学基金面上项目一项、国家重点研发计划课题两项、以及上海市科委重点课题一项，并发表多项论文专利。
 
 {%
-  include button.html
-  link="research"
-  text="Our Paper"
-  icon=""
-  flip=true
+  include link.html
+  icon="fas fa-book"
+  text="Paper"
+  link="research/"
   style="button"
 %}
 
 {%
-  include button.html
-  link=""
-  text="Github"
+  include link.html
+  type="github"
   icon=""
-  flip=true
+  text="Github"
+  link=""
   style="button"
 %}
 
